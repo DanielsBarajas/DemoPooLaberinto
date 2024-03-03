@@ -28,6 +28,7 @@ public class Controlador {
         
         switch (op) {
             case 1:
+                
                 while(view.confirPreguntaSig() != null){
                     
                     confir = view.ImprimirPregunta();
@@ -37,15 +38,13 @@ public class Controlador {
                 }
                 view.mostrarLlaves(llaves);
                 view.mensajeFinal();
-                
-                
-                
+             
                 break;
             case 2:
                 view.seraLaProxima();
                 break;
             default:
-                throw new AssertionError();
+                System.out.println("Opcion fuera del rango");
         }
         
         
